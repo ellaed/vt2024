@@ -1,1 +1,113 @@
 /* Denna fil skall innehålla din CSS kod */
+#startsida {
+    background-color: #d8a171;
+    grid-template-rows: 5fr 3fr 4fr ; 
+    gap: 25px;
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd'
+    'mi mi mi mi'
+    'ft ft ft ft';
+}
+
+header {
+background-color: beige;
+grid-area: hd;
+height: 300px;
+border: 2px solid black;
+}
+
+nav {
+    border: 1px solid black
+
+}
+
+nav ul {
+    display: flex;
+} 
+
+nav ul li {
+    list-style: none;
+    margin: 1rem 0.5rem 0.5rem 1rem;
+}
+
+nav ul li a {
+    color: beige;
+    text-decoration: none;
+}
+
+main {
+    grid-area: mi;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside {
+    border: 2px solid black; 
+    background-color: beige;
+}
+
+section {
+    border: 2px solid black;
+    background-color: beige;
+}
+
+footer {
+grid-area: ft;
+border: 2px solid black;border: 2px solid black;
+background-color: beige;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: beige;
+    }
+
+    header {
+        position: relative ;
+    }
+
+    #meny {
+        height: 1.5rem;
+        width:  2.2rem;
+        position: absolute;
+        top: 0.7rem;
+        right: 0.7rem ;
+
+    }
+
+    #meny div {
+        border: 1.5px solid #000;
+        margin: 0.3rem;
+    }
+
+    nav{
+        justify-content: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav.active {
+        max-height: 1000px;
+        transition: max-height 1s;
+    }
+    
+    nav ul{
+        display: block;
+        padding: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+    
+    nav ul li a {
+        width: 100%;
+        height: 100% ;
+    }
+
+    nav ul li:hover {
+        background-color:rgb(98, 76, 80); 
+    }
+     
+}
