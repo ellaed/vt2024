@@ -23,11 +23,25 @@
 
 #product {
     background-color: #a98463;
-    grid-template-rows: 5fr 3fr 4fr ; 
+    grid-template-rows: 1fr 1fr 8fr 3fr; 
     gap: 25px;
     display: grid;
     grid-template-areas:
-    'nv nv nv nv';
+    'hd hd hd hd'
+    'nv nv nv nv'
+    'sc sc ai ai'
+    'ft ft ft ft';
+}
+
+#new {
+    background-color: #a98463;
+    /* grid-template-rows: 5fr 3fr 4fr ;  */
+    gap: 25px;
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd'
+    'nv nv nv nv'
+    'sc sc sc sc';
 }
 
 
@@ -103,20 +117,18 @@ main {
     justify-content: space-around;
 }
 
-aside {
+#ai1 {
     border: 2px solid black; 
-    background-color: beige;
     border-radius: 5%;
     width: 40%;
     background-image: url(../img/photo_2.jpg);
     background-size: cover;
 }
 
-section#reklam{
+#sc1{
     background-image: url(../img/photo_4.jpg);
     background-size: cover;
     border: 2px solid black;
-    background-color: beige;
     border-radius: 5%;
     width: 40%;
     height: 15rem;
@@ -250,6 +262,11 @@ section#right2 {
 
 
 
+
+#hd3 {
+background-color: brown;
+}
+
 #nv3 {
     display: flex;
     grid-area: nv;
@@ -258,6 +275,145 @@ section#right2 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
 }
+
+
+#sc3 {
+    grid-area: sc;
+    background-image: url(../img/photo_8.jpg);
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 5%;
+    height: auto;
+
+}
+
+#ai3 {
+    grid-area: ai;
+    border: 2px solid black;
+    border-radius: 5%;
+    height: auto;
+}
+
+#ft3 article {
+    width: 4rem;
+    height: 6rem;
+    border: #000 solid;
+    border: 2px solid black; 
+    background-color: beige;
+    border-radius: 5%;
+    margin:10px;
+}
+
+#ex1 {
+    background-image: url(../img/photo_7.jpg);
+    background-size: cover;
+}
+
+#ex2 {
+    background-image: url(../img/photo_5.jpg);
+    background-size: cover;
+}
+
+#ex3 {
+    background-image: url(../img/photo_2.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#hd4 {
+    grid-area: hd;
+    background-color: brown;
+}
+    
+#nv4 {
+    display: flex;
+    grid-area: nv;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+    
+#sec4 {
+    grid-area: sc;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+}
+      
+#sec4 article {
+    width: 15rem;
+    height: 17rem;
+    border: #000 solid;
+    border: 2px solid black; 
+    background-color: beige;
+    border-radius: 5%;
+    margin:10px;
+}
+      
+#new1 {
+    background-image: url(../img/photo_7.jpg);
+    background-size: cover;
+}
+      
+#new2 {
+    background-image: url(../img/photo_5.jpg);
+    background-size: cover;
+}
+      
+#new3 {
+    background-image: url(../img/photo_2.jpg);
+    background-size: cover;
+}
+      
+#new4 {
+    background-image: url(../img/photo_8.jpg);
+    background-size: cover;
+}
+      
+#new5 {
+    background-image: url(../img/photo_9.jpg);
+    background-size: cover;
+}
+      
+#new6 {
+    background-image: url(../img/photo_10.jpg);
+    background-size: cover;
+}
+      
+#new7 {
+    background-image: url(../img/photo_1.jpg);
+    background-size: cover;
+}
+      
+#new8 { 
+    background-image: url(../img/photo_11.jpg);
+    background-size: cover;
+}
+      
+      
+
+
+
+
+
+
+
+
+
+
 
 
 
