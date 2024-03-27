@@ -1,4 +1,4 @@
-/* Denna fil skall innehålla din CSS kod */
+
 #startsida {
     background-color: #a98463;
     grid-template-rows: 5fr 3fr 4fr ; 
@@ -26,11 +26,13 @@
     grid-template-rows: 1fr 1fr 8fr 3fr; 
     gap: 25px;
     display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas:
     'hd hd hd hd'
     'nv nv nv nv'
     'sc sc ai ai'
     'ft ft ft ft';
+    width: 95%;
 }
 
 #news {
@@ -64,8 +66,16 @@ border-radius: 5%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-
 }
+
+#logo1 {
+   position: relative;
+   top: 5px;
+    height: 3rem;
+}
+
+
+
 
 section#left1 {
     background-image: url(../img/photo_6.jpg);
@@ -81,8 +91,9 @@ section#right1 {
     width: 40%;
     height: 80%;
     border-radius: 0% 0% 5% 0%;
-    
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 #nv1 {
@@ -176,6 +187,12 @@ flex-wrap: wrap;
 justify-content: space-between;
 }
 
+#logo2 {
+    position: relative;
+   top: 5px;
+    height: 3rem;
+}
+
 #nv2 {
     display: flex;
     grid-area: nv;
@@ -199,6 +216,9 @@ section#right2 {
     width: 40%;
     height: 80%;
     border-radius: 0% 0% 5% 0%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 4rem;
+    box-sizing: border-box;
 }
 
 #sec2 {
@@ -276,6 +296,8 @@ height: 3rem;
 #nv3 {
     display: flex;
     grid-area: nv;
+    background-color: beige;
+    border-radius: 5%;
     justify-content: space-around;
     border-bottom: 1px solid black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -298,6 +320,8 @@ height: 3rem;
     border: 2px solid black;
     border-radius: 5%;
     height: auto;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 #ft3 {
@@ -310,7 +334,7 @@ height: 3rem;
   }
 
 #ft3 article {
-    width: 4rem;
+    width: 6rem;
     height: 6rem;
     border: #000 solid;
     border: 2px solid black; 
@@ -357,6 +381,7 @@ height: 3rem;
     grid-area: nv;
     justify-content: space-around;
     background-color: beige;
+    border-radius: 5%;
     border-bottom: 1px solid black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
