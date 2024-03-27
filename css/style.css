@@ -24,7 +24,6 @@
 #product {
     background-color: #a98463;
     grid-template-rows: 1fr 1fr 8fr 3fr; 
-    gap: 25px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas:
@@ -32,7 +31,7 @@
     'nv nv nv nv'
     'sc sc ai ai'
     'ft ft ft ft';
-    width: 95%;
+    
 }
 
 #news {
@@ -58,7 +57,7 @@ a {
 
 
 #hd1 {
-background-color: beige;
+background-color: #f5f5dc;
 grid-area: hd;
 height: 300px;
 border: 2px solid black;
@@ -87,7 +86,7 @@ section#left1 {
 }
 
 section#right1 {
-    background-color: rgb(86, 104, 68);
+    background-color: #748366;
     width: 40%;
     height: 80%;
     border-radius: 0% 0% 5% 0%;
@@ -212,7 +211,7 @@ section#left2 {
 }
 
 section#right2 {
-    background-color: rgb(90, 106, 113);
+    background-color: #889aa1;
     width: 40%;
     height: 80%;
     border-radius: 0% 0% 5% 0%;
@@ -312,6 +311,7 @@ height: 3rem;
     border: 2px solid black;
     border-radius: 5%;
     height: auto;
+    margin: 1rem;
 
 }
 
@@ -320,8 +320,12 @@ height: 3rem;
     border: 2px solid black;
     border-radius: 5%;
     height: auto;
-    width: 50%;
+    margin: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem;
     box-sizing: border-box;
+    background-color: beige;
+
 }
 
 #ft3 {
